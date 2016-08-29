@@ -1,3 +1,5 @@
+package ru.sbt.Cache;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -15,5 +17,5 @@ public @interface Cache {
 
     Class[] identityBy() default {};
 
-    int listList() default 0;
+    int listSize() default 100_000;
 }
